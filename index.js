@@ -17,7 +17,7 @@ $(document).ready(function() {
       divs.eq(0).fadeIn(400)
     }
       divs.eq(i).fadeIn(400)
-                .delay(1813)
+                .delay(1313)
                 .fadeOut(400, cycle);
 
       i += 1;
