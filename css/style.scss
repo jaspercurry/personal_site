@@ -40,7 +40,7 @@ h3 {
   text-align: center;
   font-family: 'Muli', sans-serif;
     margin-top: 0px;
-    @media(max-width:767px){
+    @media(max-width:992px){
       margin-top: 20px;
     }
 
@@ -48,7 +48,7 @@ h3 {
 
 .tippy {
   padding-top: 60px;
-  @media(max-width:767px){
+  @media(max-width:992px){
     padding-top: 30px;
   }
 }
@@ -61,13 +61,6 @@ h3 {
   text-align: center;
 }
 
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-
 .vert-center {
   height: 100%;
   display: flex;
@@ -78,7 +71,7 @@ h3 {
     font-size: 46px;
     padding-right: 10px;
     font-family: 'Muli', sans-serif;
-    @media (max-width: 767px){
+    @media (max-width: 992px){
       font-size: 36px;
     }
   }
@@ -88,25 +81,12 @@ h3 {
 .i_block {
   padding-left: 25px;
   margin-left: -15px;
-  // border-left-width: 3px;
-  // border-left-style: solid;
-  // border-color: black;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   p {
-        margin: 0 0 0px;
+    margin: 0 0 0px;
   }
-}
-
-
-.col-big{
-    position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-	width:20%;
 }
 
 .hovereffect {
@@ -117,6 +97,12 @@ h3 {
   position: relative;
   text-align: center;
   cursor: default;
+  img {
+    border-width: 1px;
+    border-color: #B1B1B1;
+    border-style: solid;
+    border-radius: 3px;
+  }
 }
 
 .hovereffect .overlay {
@@ -132,13 +118,10 @@ h3 {
   background-color: rgba(75,75,75,0.0);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  border-radius: 3px;
 }
 
 .hovereffect:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.hovereffect:focus .overlay {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -146,8 +129,6 @@ h3 {
   display: block;
   position: relative;
 }
-
-
 
 .hovereffect p.info {
   width: 100%;
@@ -180,18 +161,6 @@ h3 {
   box-shadow: 0 0 5px #fff;
 }
 
-.hovereffect:focus p.info {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.hovereffect p.info:focus {
-  box-shadow: 0 0 5px #fff;
-}
-
 .wiggle-grey {
     content: "";
     background-image: url(../portfolio/wigglegrey.svg);
@@ -206,7 +175,6 @@ h3 {
     width: 100%;
 }
 
-
 .vert-wiggle {
   background-image: url(../portfolio/vert-wiggle.svg);
   height: 100%;
@@ -214,7 +182,4 @@ h3 {
   width: 4px;
   position: absolute;
   left: 0;
-
-
-
 }
